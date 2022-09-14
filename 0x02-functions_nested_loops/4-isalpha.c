@@ -1,19 +1,19 @@
 #include "main.h"
 
-/*
- * _isalpha -Entry point
- * @check: the integer value it receives
+/**
+ * _isalpha - Entry point
+ * @c: the integer value it receives
  * Description: checks if alphabet
- * Return: 1 if true, otherwise 0
+ * Return: 1 if true. 0 if false
  */
 
-int _isalpha(int check)
+int _isalpha(int c)
 {
-	if (check >= 'a' && check <= 'z')
+	if (c >= 'a' && c <= 'z')
 	{
-		return (1);
+	return (1);
 	}
-	elif (check >= 'A' && check <= 'Z')
+	else if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
