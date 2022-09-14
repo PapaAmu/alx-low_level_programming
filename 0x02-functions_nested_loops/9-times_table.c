@@ -6,30 +6,35 @@
 
 void times_table(void)
 {
-	int num, mltply, rslt;
+	int row, column, product, tens, ones;
 
-	for (num = 0; num <= 9; num++)
+	for (row = 0; row <= 9; row++)
 	{
-		_putchar('0');
-
-		for (mltply = 1; mltply <= 9; mltply++)
+		for (column = 0; column <= 9; column++)
 		{
-			_putchar(',');
-			_putchar(' ');
-			rslt = num * mltply;
+			product = row * column;
+			tens = product / 10;
+			ones = product % 10;
 
-			if (rslt <= 9)
+			if (column == 0)
 			{
+				_putchar('0');
+			}
+			else if (product < 10)
+			{
+				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
+				_putchar(ones + '0');
 			}
 			else
 			{
-				_putchar((rslt / 10) + '0');
-				_putchar((rslt % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(tens + '0');
+				_putchar(ones + '0');
 			}
-			_putchar('\n');
 		}
+		_putchar('\n');
 	}
 }
-
-
