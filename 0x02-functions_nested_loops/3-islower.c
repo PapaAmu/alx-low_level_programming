@@ -14,7 +14,7 @@ int _islower(int check_)
 	{
 		if (check_ == i)
 		{
-			return(1);
+			return (1);
 		}
 	}
 	return (0);
