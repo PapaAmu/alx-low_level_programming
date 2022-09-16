@@ -1,21 +1,19 @@
 #include "main.h"
 
 /**
- * print_line - prints a line
- * @n: variable
- *
- * Return: 0
- */
-
-void print_line(int n)
+* print_line -> printing line
+* @line_index: integer params
+*/
+void print_line(int line_index)
 {
-	int len;
+	int x_value;
 
-	if (n > 0)
+	if (line_index <= 0)
+		_putchar('\n');
+	else
 	{
-		for (len = 0; len < n; len ++;
-			_putchar('_');
-			a++;
+		for (x_value = 0; x_value < line_index; x_value++)
+			_putchar(95);
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
