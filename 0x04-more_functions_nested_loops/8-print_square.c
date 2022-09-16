@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_square: checks for a digit
+ * print_square- checks for a digit
+ * Description: code to print
  * @n: number of # to be printed
  * Return: void
  */
@@ -13,7 +14,7 @@ void print_square(int n)
 	while (i < n && n > 0)
 	{
 		sq = 0;
-		while ( sq < n)
+		while (sq < n)
 		{
 			_putchar('#');
 			sq++;
