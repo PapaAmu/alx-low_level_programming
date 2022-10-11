@@ -45,6 +45,7 @@ if (doge->owner == NULL)
 {
 free(doge->owner);
 free(doge->name);
+free(doge);
 return (NULL);
 }
 for (k = 0; k <= j; k++)
